@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    username: sa
+    #    url: jdbc:h2:${user.dir}/thb
+    url: jdbc:h2:mem:testdb
+
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: bael-admin
+      password: pass
+    realmImportFile: baeldung-realm.json
+
+#logging:
+#  level:
+#    org: DEBUG
+#    org.keycloak: DEBUG
+#    org.jboss: DEBUG
+#    org.infinispan: DEBUG
+#    org.springframework: DEBUG
+#    org.springframework.boot.autoconfigure.logging: DEBUG
+#    org.springframework.context.support: DEBUG
+#    org.hibernate: DEBUG
+#    org.h2: DEBUG
